@@ -3,31 +3,311 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.8/context.json
+about: []
 access:
-- embargoedUntil: '2028-03-10'
+- embargoedUntil: '2026-06-15'
   schemaKey: AccessRequirements
-  status: dandi:EmbargoedAccess
+  status: dandi:OpenAccess
+acknowledgement: We thank the Allen Institute founder, Paul G. Allen, for his vision,
+  encouragement, and support.
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 233057304094
+  numberOfFiles: 14
+  numberOfSubjects: 14
   schemaKey: AssetsSummary
-citation: Allen Institute Openscope - Loop project (2026). (Version draft) [Data set].
-  DANDI Archive. https://dandiarchive.org/dandiset/001191/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - LFP
+  - ElectricalSeries
+  - ElectrodeGroup
+  - ProcessingModule
+  - Units
+citation: Barnea, Noa; Bawany, Ahad; Belski, Hannah; Bussi, Ivana; Carlson, Mikayla;
+  Deitch, Daniel; Durand, Severine; Gillis, Ryan; Ha, Vivian; Han, Warren; Johnson,
+  Tye; Lecoq, Jérôme A.; Naidoo, Robyn; Park, Jimin; Peene, R. Carter; Rubin, Alon;
+  Swapp, Jackie; Talpir, Itay; Weber, Julie; Williford, Ali; Young, Ahrial; Ziv, Yaniv
+  (2026) Allen Institute Openscope - Loop project (Version draft) [Data set]. DANDI
+  Archive. https://dandiarchive.org/dandiset/001191/draft
 contributor:
 - awardNumber: 1 U24 NS 113646-01A1
   name: National Institutes of Health (NIH)
   roleName:
   - dcite:Funder
   schemaKey: Organization
+- affiliation:
+  - name: Weizmann Institute of Science
+    schemaKey: Affiliation
+  email: noa.barnea5@gmail.com
+  identifier: 0009-0009-2913-6757
+  includeInCitation: true
+  name: Barnea, Noa
+  roleName:
+  - dcite:FormalAnalysis
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Bawany, Ahad
+  roleName:
+  - dcite:Software
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Belski, Hannah
+  roleName:
+  - dcite:ProjectAdministration
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0000-0003-4721-763X
+  includeInCitation: true
+  name: Bussi, Ivana
+  roleName:
+  - dcite:ProjectAdministration
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0003-7019-2781
+  includeInCitation: true
+  name: Carlson, Mikayla
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Weizmann Institute of Science
+    schemaKey: Affiliation
+  email: daniel.deitch@weizmann.ac.il
+  includeInCitation: true
+  name: Deitch, Daniel
+  roleName:
+  - dcite:ContactPerson
+  - dcite:FormalAnalysis
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0000-0001-7788-0200
+  includeInCitation: true
+  name: Durand, Severine
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0000-1879-6519
+  includeInCitation: true
+  name: Gillis, Ryan
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Ha, Vivian
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0006-0104-0380
+  includeInCitation: true
+  name: Han, Warren
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0006-7239-7571
+  includeInCitation: true
+  name: Johnson, Tye
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: jeromel@alleninstitute.org
+  identifier: 0000-0002-0131-0938
+  includeInCitation: true
+  name: Lecoq, Jérôme A.
+  roleName:
+  - dcite:ProjectLeader
+  - dcite:ContactPerson
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0004-0996-8808
+  includeInCitation: true
+  name: Naidoo, Robyn
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Park, Jimin
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  email: carter.peene@alleninstitute.org
+  identifier: 0009-0000-6660-2264
+  includeInCitation: true
+  name: Peene, R. Carter
+  roleName:
+  - dcite:Software
+  schemaKey: Person
+- affiliation:
+  - name: Weizmann Institute of Science
+    schemaKey: Affiliation
+  email: alon.rubin@gmail.com
+  includeInCitation: true
+  name: Rubin, Alon
+  roleName:
+  - dcite:Supervision
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0008-4965-6242
+  includeInCitation: true
+  name: Swapp, Jackie
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Weizmann Institute
+    schemaKey: Affiliation
+  email: itay.talpir@weizmann.ac.il
+  identifier: 0009-0009-4749-9324
+  includeInCitation: true
+  name: Talpir, Itay
+  roleName:
+  - dcite:Conceptualization
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0002-1060-3828
+  includeInCitation: true
+  name: Weber, Julie
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0000-7282-7515
+  includeInCitation: true
+  name: Williford, Ali
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Young, Ahrial
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Weizmann Institute of Science
+    schemaKey: Affiliation
+  email: yaniv.ziv@weizmann.ac.il
+  identifier: 0000-0001-6658-9303
+  includeInCitation: true
+  name: Ziv, Yaniv
+  roleName:
+  - dcite:Supervision
+  - dcite:ContactPerson
+  schemaKey: Person
 dateCreated: '2024-09-05T20:30:27.534229+00:00'
-description: Dandiset for Openscope's Loop project
+description: "  In the natural world, sensory experience unfolds as a continuous and
+  dynamic process where past sensory input predicts the present. The brain utilizes
+  this sequential flow of recent sensory information to make predictions, infer causal
+  relationships between events, and to give rise to our perceptions. Traditionally,
+  such higher cognitive functions were attributed to the computations undertaken in
+  associative brain regions, while sensory areas (such as V1) were thought to serve
+  as passive feature detectors. This longstanding view is now being challenged by
+  compelling evidence showing the capacity of these areas for plasticity and complex
+  computations such as forming spatial expectations, temporal associations, reward
+  prediction, and categorial learning. Importantly, it has been established that sensory
+  processing is not solely determined by the system's current sensory inputs but also
+  strongly influenced by preceding sensory inputs, a phenomenon known as hysteresis.This
+  phenomenon has been characterized in detail in the visual system, with prominent
+  examples that include adaptation, repetition suppression, prediction suppression
+  and facilitatory history effects. However, previous work predominantly focused on
+  the neuronal dynamics over short time scales, ranging from milliseconds to several
+  minutes, in response to a limited set of synthetic stimuli. Moreover, much of our
+  current knowledge relies on recordings from the primary visual cortex and on interpretations
+  that emphasize modulation of single cells’ activity rather than analysis of population-level
+  dynamics. Consequently, the extent to which prior experience over longer timescales
+  shapes neuronal representations, and specifically representations of more ethologically
+  relevant natural stimuli, remains unclear. It also remains unclear whether and to
+  what extent the effects of prior experience on such neuronal representations differ
+  along the visual system's hierarchical structure."
+ethicsApproval:
+- contactPoint:
+    schemaKey: ContactPoint
+  identifier: ​Allen Institute Institutional Animal Care and Use Committee (IACUC),
+    protocol 2117
+  schemaKey: EthicsApproval
 id: DANDI:001191/draft
 identifier: DANDI:001191
+keywords:
+- OpenScope
+- Ecephys
+- Neuropixels
+- Mice
+license:
+- spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001191/versions/draft/assets/
 name: Allen Institute Openscope - Loop project
+relatedResource:
+- name: OpenScope’s Loop Dataset - OpenScope Databook
+  relation: dcite:IsDescribedBy
+  repository: openscope_databook
+  schemaKey: Resource
+  url: https://alleninstitute.github.io/openscope_databook/loop/
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.8
 url: https://dandiarchive.org/dandiset/001191/draft
 version: draft
+wasGeneratedBy: []
