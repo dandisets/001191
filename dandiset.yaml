@@ -47,8 +47,8 @@ citation: Barnea, Noa; Bawany, Ahad; Belski, Hannah; Bussi, Ivana; Carlson, Mika
   Deitch, Daniel; Durand, Severine; Gillis, Ryan; Ha, Vivian; Han, Warren; Johnson,
   Tye; Lecoq, Jérôme A.; Naidoo, Robyn; Park, Jimin; Peene, R. Carter; Rubin, Alon;
   Swapp, Jackie; Talpir, Itay; Weber, Julie; Williford, Ali; Young, Ahrial; Ziv, Yaniv
-  (2026) Allen Institute Openscope - Loop project (Version draft) [Data set]. DANDI
-  Archive. https://dandiarchive.org/dandiset/001191/draft
+  (2026) Allen Institute Openscope - Loop project (Version 0.260624.2038) [Data set].
+  DANDI Archive. https://doi.org/10.48324/dandi.001191/0.260624.2038
 contributor:
 - awardNumber: 1 U24 NS 113646-01A1
   name: National Institutes of Health (NIH)
@@ -257,6 +257,7 @@ contributor:
   - dcite:ContactPerson
   schemaKey: Person
 dateCreated: '2024-09-05T20:30:27.534229+00:00'
+datePublished: '2026-06-24T20:38:07.396832+00:00'
 description: "  In the natural world, sensory experience unfolds as a continuous and
   dynamic process where past sensory input predicts the present. The brain utilizes
   this sequential flow of recent sensory information to make predictions, infer causal
@@ -281,13 +282,14 @@ description: "  In the natural world, sensory experience unfolds as a continuous
   relevant natural stimuli, remains unclear. It also remains unclear whether and to
   what extent the effects of prior experience on such neuronal representations differ
   along the visual system's hierarchical structure."
+doi: 10.48324/dandi.001191/0.260624.2038
 ethicsApproval:
 - contactPoint:
     schemaKey: ContactPoint
   identifier: ​Allen Institute Institutional Animal Care and Use Committee (IACUC),
     protocol 2117
   schemaKey: EthicsApproval
-id: DANDI:001191/draft
+id: DANDI:001191/0.260624.2038
 identifier: DANDI:001191
 keywords:
 - OpenScope
@@ -297,8 +299,20 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/001191/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/001191/0.260624.2038/assets.yaml
 name: Allen Institute Openscope - Loop project
+publishedBy:
+  endDate: '2026-06-24T20:38:07.396832+00:00'
+  id: urn:uuid:d7039ebf-5bae-4473-a94f-21d16553c0e4
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-06-24T20:38:07.396832+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:fae4a066-7dc1-42b6-9fa1-5d5ac3875b90
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - name: OpenScope’s Loop Dataset - OpenScope Databook
   relation: dcite:IsDescribedBy
@@ -308,6 +322,6 @@ relatedResource:
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.8
-url: https://dandiarchive.org/dandiset/001191/draft
-version: draft
+url: https://dandiarchive.org/dandiset/001191/0.260624.2038
+version: 0.260624.2038
 wasGeneratedBy: []
